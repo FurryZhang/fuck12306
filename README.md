@@ -11,7 +11,8 @@
 
 1. 需要安装PIL以及pytesseract库
 2. 需要安装[google tesseract-ocr](https://code.google.com/p/tesseract-ocr/)
-
+3. 想要识别中文的话，需要下载tesseract-ocr[中文字体训练库](http://pan.baidu.com/s/1c1PlXLm)，并解压后将chi_sim.traineddata文件拷贝到/usr/share/tesseract-ocr/testdata/路径下
+4. 训练数据集可以参考[这篇博客](http://blog.csdn.net/yasi_xi/article/details/8763385)
 ## Update
 
 Day2: pytesseract OCR question. 锐化二值化处理文字后交给 tesseract。
