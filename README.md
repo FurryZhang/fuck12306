@@ -9,13 +9,14 @@
 
 ## Prerequisites:
 
-1. 需要安装PIL以及pytesseract库
-2. 需要安装[google tesseract-ocr](https://code.google.com/p/tesseract-ocr/)
-3. 想要识别中文的话，需要下载tesseract-ocr[中文字体训练库](http://pan.baidu.com/s/1c1PlXLm)，并解压后将chi_sim.traineddata文件拷贝到/usr/share/tesseract-ocr/testdata/路径下import pytesseract
-  from PIL import Image
-  image = Image.open('code.png')
-  code = pytesseract.image_to_string(image)
-  print code
+1. 需要安装PIL以及pytesseract库（sudo apt-get install pytesseract）
+2. 需要安装[google tesseract-ocr](https://code.google.com/p/tesseract-ocr/)（sudo apt-get install tesseract-ocr）
+3. 想要识别中文的话，需要下载tesseract-ocr[中文字体训练库](http://pan.baidu.com/s/1c1PlXLm)，并解压后将chi_sim.traineddata文件拷贝到/usr/share/tesseract-ocr/testdata/路径下，调用pytesseract识别图片很简单：
+  </br>import pytesseract
+  </br>from PIL import Image
+  </br>image = Image.open('code.png')
+  </br>code = pytesseract.image_to_string(image)
+  </br>print code
 4. 训练数据集可以参考[这篇博客](http://blog.csdn.net/yasi_xi/article/details/8763385)
 
 ## Update
